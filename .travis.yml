@@ -17,4 +17,4 @@ before_install:
   - npm install -g mocha
 
 after_script:
-  - sh build.sh
+  - sh build.sh # This is temporary!
