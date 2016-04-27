@@ -19,7 +19,7 @@ const dos2unix = require('gulp-dos2unix')
 
 gulp.task('default', function () {
   return gulp.src(['README.md', 'LICENSE'])
-  .pipe(dos2unix()) // {native: true, feedback: true, write: true}
+  .pipe(dos2unix()) // This defaults to {native: false, feedback: false, write: false}
   .pipe(gulp.dest('out'))
 })
 ```
