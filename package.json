@@ -4,7 +4,7 @@
   "description": "Gulp plug-in to convert DOS to Unix line endings",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js --timeout 100000"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "through2": "^2.0.1"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "gulp": "^3.9.1"
   }
 }

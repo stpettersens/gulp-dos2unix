@@ -11,8 +11,7 @@ function dosToUnix (file, options, cb) {
       feedback: false,
       write: false
     }
-  }
-  else if (options.write === undefined) {
+  } else if (options.write === undefined) {
     options.write = false
   }
   // Run file through dos2unix module.

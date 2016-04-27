@@ -13,7 +13,6 @@
 ##### Usage:
 ```js
 'use strict'
-
 const gulp = require('gulp')
 const dos2unix = require('gulp-dos2unix')
 
