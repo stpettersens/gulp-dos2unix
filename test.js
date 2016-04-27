@@ -4,12 +4,10 @@ Test gulp-dos2unix.
 /* global describe it */
 'use strict'
 const fs = require('fs')
-const gulp = require('gulp')
 const assert = require('chai').assert
 const _exec = require('child_process').exec
-require('./Gulpfile.js')
 
-const sources = ['index.js', 'test.js']
+const sources = ['index.js', 'test.js', 'Gulpfile.js']
 
 describe('Test gulp-dos2unix plug-in', function () {
   it('Test code conforms to JS Standard Style (http://standardjs.com).', function (done) {
@@ -27,7 +25,6 @@ describe('Test gulp-dos2unix plug-in', function () {
 
   it('Should create UNIX line ending copies of provided text files (gulp)',
   function (done) {
-    if (gulp.tasks.test) gulp.start()
     assert.equal(fs.existsSync('out/README.md'), true)
     done()
   })
