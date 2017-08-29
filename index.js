@@ -3,6 +3,7 @@
 const gutil = require('gulp-util')
 const through = require('through2')
 const dos2unix = require('ssp-dos2unix-js').dos2unix
+const Buffer = require('safe-buffer').Buffer
 const fs = require('fs')
 
 function dosToUnix (file, options, cb) {
