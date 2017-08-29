@@ -2,7 +2,7 @@
 
 const gutil = require('gulp-util')
 const through = require('through2')
-const dos2unix = require('ssp-dos2unix').dos2unix
+const dos2unix = require('ssp-dos2unix-js').dos2unix
 const fs = require('fs')
 
 function dosToUnix (file, options, cb) {
@@ -16,7 +16,7 @@ function dosToUnix (file, options, cb) {
   }
   // Run file through dos2unix module.
   let converted = dos2unix(file, options)
-  if (converted === 1) {
+  if (converted === undefined) { // === 1) {
     // Read any file unchanged by dos2unix too.
     converted = fs.readFileSync(file)
   }

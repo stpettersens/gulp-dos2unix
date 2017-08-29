@@ -4,3 +4,4 @@ out/
 .npmignore
 .travis.yml
 *.tgz
+package-lock.json
