@@ -5,4 +5,5 @@ out/
 .travis.yml
 *.tgz
 test.js
+Gulpfile.js
 package-lock.json
