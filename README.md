@@ -26,8 +26,9 @@ gulp.task('default', function () {
 ##### Options:
 
 Omittable options object with following allowable parameters
-(same as [ssp-dos2unix-js](http://github.com/stpettersens/ssp-dos2unix-js/tree/master/node_js)):
+(same as [ssp-dos2unix](http://github.com/stpettersens/ssp-dos2unix/tree/master/node_js)):
 
+* `native` (Boolean) - Force use of native module.
 * `feedback` (Boolean) - Display feedback (*"File already has UNIX line endings..."*).
 * `writable` (Boolean) - Write change to file rather than pipe through to copy.
 

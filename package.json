@@ -1,6 +1,6 @@
 {
   "name": "gulp-dos2unix",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Gulp plug-in to convert DOS to Unix line endings",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "dependencies": {
     "gulp-util": "^3.0.7",
     "safe-buffer": "^5.1.1",
-    "ssp-dos2unix-js": "^1.0.0",
+    "ssp-dos2unix": "^1.0.1",
     "through2": "^2.0.1"
   },
   "devDependencies": {
